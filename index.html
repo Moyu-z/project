@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>数字孪生校园交互系统 - 浙江树人学院</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="container"></div>
+<div id="info-card" class="glass">
+<h3 id="info-title"></h3><p id="info-desc"></p>
+</div>
+<div id="ui-panel" class="glass">
+<h3>🏫 校园控制面板</h3>
+<div class="panel-section">
+<h4>图层切换</h4>
+<div class="btn-group">
+<button class="layer-btn active" data-layer="building">🏛 建筑</button>
+<button class="layer-btn active" data-layer="vegetation">🌳 植被</button>
+<button class="layer-btn active" data-layer="road">🛤 道路</button>
+</div>
+</div>
+<div class="panel-section">
+<h4>视角切换</h4>
+<div class="btn-group">
+<button id="view-perspective">🎯 透视视角</button>
+<button id="view-birdseye">🦅 鸟瞰视角</button>
+<button id="view-reset">🔄 重置相机</button>
+</div>
+</div>
+<div class="panel-footer">浙江树人学院 · 数字孪生期中作业</div>
+</div>
+<script type="importmap">
+{
+"imports": {
+"three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}
+}
+</script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
